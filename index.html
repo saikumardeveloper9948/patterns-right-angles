@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>1) write a program to below patterns</h1>
+
+         <h1><pre>
+         1 
+         1 2 
+         1   3 
+         1     4 
+         1 2 3 4 5 
+
+
+
+         1 2 3 4 5 
+         2     5   
+         3   5     
+         4 5       
+         5 
+
+
+
+         </pre></h1>
+
+
+
+
+    <script>
+        //  problems patterns
+// 1 
+// 1 2 
+// 1   3 
+// 1     4 
+// 1 2 3 4 5 
+
+let rows= prompt(" enter rows : ")
+for(i=1;i<=rows;i++){
+    res=""
+   for(j=1;j<=i;j++){
+        if(i==rows|| i==j ){
+           res+=j+" "
+       }
+         else if(j==1 ){
+          res+=1+ " "
+       }
+       else{
+           res+="  "
+       }
+   }
+   console.log(res)
+}
+
+
+
+
+// 1 2 3 4 5 
+// 2     5   
+// 3   5     
+// 4 5       
+// 5         
+
+
+
+
+let rows1= +prompt(" enter rows : ")
+for(i=1;i<=rows1;i++){
+    res=""
+   for(j=1;j<=rows1;j++){
+       if(j==1){
+           res+=i+" "
+       }
+       else if( i==1){
+           res+=j+" "
+       }
+      else if(i+j==rows1+1){
+          res+=rows1+" "
+      }
+       else{
+           res+="  "
+       }
+   }
+   console.log(res)
+}
+    </script>
+</body>
+</html>
